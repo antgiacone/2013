@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anthony's OneTwoSee Project</title>
+
+    <link type="text/css" rel="stylesheet" href="../../AL/app/bootstrap.css"
+    <link type="text/css" rel="stylesheet" href="../../AL/app/style.css" />
+    <link type="text/css" rel="stylesheet" href="../../AL/app/schedule.css" />
+
+    <style>
+    #main_content {
+    	width: 530px;
+		padding: 10px;
+		margin: 20px auto;
+		border: 1px solid #ddd;
+        overflow: auto;
+    }
+
+    #main_content .user-list{
+    	float: left;
+    	width: 150px;
+    }
+
+     #main_content .user-details{
+    	float: left;
+    	width: 350px;
+    	border: 1px solid #ccc;
+    	border-radius: 5px;
+    	margin-left: 20px;
+    }
+
+    #main_content .user-details .avatar{
+        text-align: center;
+    }
+
+    #main_content .user-details .avatar img{
+        width: 90px;
+        margin: 0 auto;
+    }
+
+    #main_content .user-details li{
+        margin: 10px;
+        list-style: none;
+    }
+    </style>
+</head>
+
+<body>
+<div class="page">
+            <h1>NFL Weekly Scoreboard</h1>
+            
+	Schedule
+	 <div id='nav'>
+	   <ul>
+	     <li><a href="file:///C|/Users/Developer/Desktop/chapter2/layoutmanager/week 2.html">Week 2</a></li>
+	     <li><a href="file:///C|/Users/Developer/Desktop/chapter2/layoutmanager/week 3.html">Week 3</a></li>
+	     <li><a href="file:///C|/Users/Developer/Desktop/chapter2/layoutmanager/week 4.html">Week 4</a></li>
+       </ul>
+	   </div>
+	<script type="text/template" id="tpl_main_content">
+		<div id="main_content">
+	    	<div class="user-list">
+	    		
+	    	</div>
+	    	<div class="user-details">
+	    		
+	    	</div>
+	    </div>
+    </script>
+
+    <script type="text/template" id="tpl_user_item">
+	    <a class="name" href="#">{{Location}}</a>
+    </script>
+
+    <script type="text/template" id="tpl_user_details">
+        <div class="avatar"><img src="{{avatar}}" /></div>
+        <ul>
+            <li><strong>{AwayTeam} vs {HomeTeam}</strong> {{AwayTeam}}  </li>
+			<li><strong>Away Score:</strong>  {{AScore}}</li>
+			<li><strong>Home Score:</strong>  {{HScore}}</li>
+			<li><strong>Time:</strong>  {{Game_Time}}</li>
+			<li><strong>Game Date:</strong>  {{Game_Date}}</li>
+			<li><strong>Status:</strong>  {{Status}} | <strong>Season Type:</strong>  {{SeasonType}}</li>
+            <li></li>
+         </ul>
+    </script>
+
+    <script src="file:///C|/Users/Developer/Desktop/lib/jquery-2.0.1.js"></script>
+    <script src="file:///C|/Users/Developer/Desktop/lib/underscore.js"></script>
+    <script src="file:///C|/Users/Developer/Desktop/lib/backbone.js"></script>
+    <script src="file:///C|/Users/Developer/Desktop/lib/backbone.layoutmanager.js"></script>
+    <script src="file:///C|/Users/Developer/Desktop/chapter2/layoutmanager/layoutmanager.js"></script>
+</body>
+
+</html>
+
+
