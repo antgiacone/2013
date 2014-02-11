@@ -1,13 +1,12 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Anthony's OneTwoSee Project</title>
+    <title>Anthony's Project</title>
 
-    <link type="text/css" rel="stylesheet" href="../../AL/app/bootstrap.css"
-    <link type="text/css" rel="stylesheet" href="../../AL/app/style.css" />
-    <link type="text/css" rel="stylesheet" href="../../AL/app/schedule.css" />
+    <link type="text/css" rel="stylesheet" href="http://freeyourlimits.us/css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="http://freeyourlimits.us/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="http://freeyourlimits.us/css/schedule.css" />
 
     <style>
     #main_content {
@@ -54,9 +53,9 @@
 	Schedule
 	 <div id='nav'>
 	   <ul>
-	     <li><a href="file:///C|/Users/Developer/Desktop/chapter2/layoutmanager/week 2.html">Week 2</a></li>
-	     <li><a href="file:///C|/Users/Developer/Desktop/chapter2/layoutmanager/week 3.html">Week 3</a></li>
-	     <li><a href="file:///C|/Users/Developer/Desktop/chapter2/layoutmanager/week 4.html">Week 4</a></li>
+	     <li><a href="week 2.html">Week 2</a></li>
+	     <li><a href="week 3.html">Week 3</a></li>
+	     <li><a href="week 4.html">Week 4</a></li>
        </ul>
 	   </div>
 	<script type="text/template" id="tpl_main_content">
@@ -75,9 +74,9 @@
     </script>
 
     <script type="text/template" id="tpl_user_details">
-        <div class="avatar"><img src="{{avatar}}" /></div>
+        <div class="image"><img src="{{image}}" /></div>
         <ul>
-            <li><strong>{AwayTeam} vs {HomeTeam}</strong> {{AwayTeam}}  </li>
+            <li><strong>{{AwayTeamid}} vs {{HomeTeamid}}</strong>  </li>
 			<li><strong>Away Score:</strong>  {{AScore}}</li>
 			<li><strong>Home Score:</strong>  {{HScore}}</li>
 			<li><strong>Time:</strong>  {{Game_Time}}</li>
@@ -86,12 +85,13 @@
             <li></li>
          </ul>
     </script>
+</div>
 
-    <script src="file:///C|/Users/Developer/Desktop/lib/jquery-2.0.1.js"></script>
-    <script src="file:///C|/Users/Developer/Desktop/lib/underscore.js"></script>
-    <script src="file:///C|/Users/Developer/Desktop/lib/backbone.js"></script>
-    <script src="file:///C|/Users/Developer/Desktop/lib/backbone.layoutmanager.js"></script>
-    <script src="file:///C|/Users/Developer/Desktop/chapter2/layoutmanager/layoutmanager.js"></script>
+    <script src="http://freeyourlimits.us/lib/jquery-2.0.1.js"></script>
+    <script src="http://freeyourlimits.us/lib/underscore.js"></script>
+    <script src="http://freeyourlimits.us/lib/backbone.js"></script>
+    <script src="http://freeyourlimits.us/lib/backbone.layoutmanager.js"></script>
+    <script src="http://freeyourlimits.us/collection.js"></script>
 </body>
 
 </html>
