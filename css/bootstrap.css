@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* Schedule CSS markup */
+ 
+ *{
+		margin:0px;
+		padding:0px;
+	}
+	#nav{
+		border:1px solid #999999;
+	}
+	#nav li{
+		display:block;
+		background-color:#CCCCCC;
+		
+		-moz-transition-property:background-color, padding-left;
+		-moz-transition-duration:1s;
+		-webkit-transition-property:background-color, padding-left;
+		-webkit-transition-duration:1s;
+		-o-transition-property:background-color, padding-left;
+		-o-transition-duration:1s;
+		transition-property:background-color, padding-left;
+		transition-duration:1s;
+		
+	}
+	#nav li:hover{
+		background-color:#FF9900;
+		padding-left:10;
+	}
+	#nav a{
+		color:#663;
+		text-decoration:none;
+	}
+	#nav a:hover{
+		color:#FFFFFF;
+	}
+
